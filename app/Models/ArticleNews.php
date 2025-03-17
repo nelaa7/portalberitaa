@@ -19,8 +19,13 @@ class ArticleNews extends Model
         'content',
         'category_id',
         'author_id',
-        'is_featurd',
+        'is_featured',
     ];
+
+    // protected $casts = [
+    //     'slug' => 'string',
+    //     'is_featured' => 'string', 
+    // ];
 
     public function setNameAttribute($value){
         $this->attributes['name'] = $value;

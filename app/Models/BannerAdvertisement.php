@@ -12,7 +12,7 @@ class BannerAdvertisement extends Model
 
     protected $fillable = [
         'link',
-        'is_activate',
+        'is_active',
         'type',
         'thumbnail',
     ];
