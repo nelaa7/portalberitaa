@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="{{asset('output.css')}}" rel="stylesheet" />
-		<link href="{{asset('main.css')}}" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-		<!-- CSS -->
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
-	</head>
+
+@extends('front.master')
+@section('content')
+
 	<body class="font-[Poppins] pb-[72px]">
-		<nav id="Navbar" class="max-w-[1130px] mx-auto flex justify-between items-center mt-[30px]">
-			<div class="logo-container flex gap-[30px] items-center">
-				<a href="index.html" class="flex shrink-0">
-					<img src="assets/images/logos/logo.png" alt="logo" />
-				</a>
-				<div class="h-12 border border-[#E8EBF4]"></div>
-				<form action="searchPage.html" class="w-[450px] flex items-center rounded-full border border-[#E8EBF4] p-[12px_20px] gap-[10px] focus-within:ring-2 focus-within:ring-[#143D60] transition-all duration-300">
-					<button type="submit" class="w-5 h-5 flex shrink-0">
-						<img src="assets/images/icons/search-normal.svg" alt="icon" />
-					</button>
-					<input type="text" name="" id="" class="appearance-none outline-none w-full font-semibold placeholder:font-normal placeholder:text-[#A3A6AE]" placeholder="Search hot trendy news today..." />
-				</form>
-			</div>
-			<div class="flex items-center gap-3">
-				<a href="" class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#143D60]">Upgrade Pro</a>
-				<a href="" class="rounded-full p-[12px_22px] flex gap-[10px] font-bold transition-all duration-300 bg-[#FF6B18] text-white hover:shadow-[0_10px_20px_0_#143D6080]">
-					<div class="w-6 h-6 flex shrink-0">
-						<img src="assets/images/icons/favorite-chart.svg" alt="icon" />
-					</div>
-					<span>Post Ads</span>
-				</a>
-			</div>
-		</nav>
+		<x-navbar/>
 		<nav id="Category" class="max-w-[1130px] mx-auto flex justify-center items-center gap-4 mt-[30px]">
 
 			@foreach ($categories as $category)
@@ -82,7 +53,7 @@
 					Latest Hot News <br />
 					Good for Curiousity
 				</h2>
-				<p class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#143D60] w-fit">UP TO DATE</p>
+				<p class="badge-orange rounded-full p-[8px_18px] bg-[#143D60] font-bold text-sm leading-[21px] text-[#FFFFFF] w-fit">UP TO DATE</p>
 			</div>
 			<div class="grid grid-cols-3 gap-[30px]">
 				@forelse ($notfeatured_articles as $article)
@@ -107,7 +78,7 @@
 		</section>
 		<section id="Best-authors" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
 			<div class="flex flex-col text-center gap-[14px] items-center">
-				<p class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#143D60] w-fit">BEST AUTHORS</p>
+				<p class="badge-orange rounded-full p-[8px_18px] bg-[#143D60] font-bold text-sm leading-[21px] text-[#FFFFFF] w-fit">BEST AUTHORS</p>
 				<h2 class="font-bold text-[26px] leading-[39px]">
 					Explore All Masterpieces <br />
 					Written by People
@@ -174,8 +145,8 @@
 									<img src="{{Storage::url($entertaiment->thumbnail)}}" class="object-cover w-full h-full" alt="thumbnail" />
 								</div>
 								<div class="flex flex-col justify-center-center gap-[6px]">
-									<h3 class="font-bold text-lg leading-[27px]">{{ substr($entertaiment->name, 0, 50)}}{{ strlen($entertaiment->name)> 50 ? '...':''}}...</h3>
-									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$entertaiment->created_at-format('d M, Y')}}</p>
+									<h3 class="font-bold text-lg leading-[27px]">{{ substr($entertaiment->name, 0, 50)}}{{ strlen($entertaiment->name)> 50 ? '...':''}}</h3>
+									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$entertaiment->created_at->format('d M, Y')}}</p>
 								</div>
 							</div>
 						</a>
@@ -219,11 +190,11 @@
 						<a href="{{route('front.details', $business->slug)}}" class="card py-[2px]">
 							<div class="rounded-[20px] border border-[#EEF0F7] p-[14px] flex items-center gap-4 hover:ring-2 hover:ring-[#143D60] transition-all duration-300">
 								<div class="w-[130px] h-[100px] flex shrink-0 rounded-[20px] overflow-hidden">
-									<img src="{{Storage::link($business->thumbnail)}}" class="object-cover w-full h-full" alt="thumbnail" />
+									<img src="{{Storage::url($business->thumbnail)}}" class="object-cover w-full h-full" alt="thumbnail" />
 								</div>
 								<div class="flex flex-col justify-center-center gap-[6px]">
 									<h3 class="font-bold text-lg leading-[27px]">{{ substr($business->name, 0, 50)}}{{ strlen($business->name)> 50 ? '...':''}}</h3>
-									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$business->created_at-format('d M, Y')}}</p>
+									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$business->created_at->format('d M, Y')}}</p>
 								</div>
 							</div>
 						</a>
@@ -263,11 +234,11 @@
 						<a href="{{route('front.details', $politics->slug)}}" class="card py-[2px]">
 							<div class="rounded-[20px] border border-[#EEF0F7] p-[14px] flex items-center gap-4 hover:ring-2 hover:ring-[#143D60] transition-all duration-300">
 								<div class="w-[130px] h-[100px] flex shrink-0 rounded-[20px] overflow-hidden">
-									<img src="assets/images/thumbnails/camp.png" class="object-cover w-full h-full" alt="thumbnail" />
+									<img src="{{Storage::url($politics->thumbnail)}}" class="object-cover w-full h-full" alt="thumbnail" />
 								</div>
 								<div class="flex flex-col justify-center-center gap-[6px]">
-									<h3 class="font-bold text-lg leading-[27px]">{{ substr($politics->name, 0, 50)}}{{ strlen($politica->name)> 50 ? '...':''}}</h3>
-									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$politics->created_at-format('d M, Y')}}</p>
+									<h3 class="font-bold text-lg leading-[27px]">{{ substr($politics->name, 0, 50)}}{{ strlen($politics->name)> 50 ? '...':''}}</h3>
+									<p class="text-sm leading-[21px] text-[#A3A6AE]">{{$politics->created_at->format('d M, Y')}}</p>
 								</div>
 							</div>
 						</a>
@@ -281,10 +252,21 @@
 			</div>
 		</section>
 
-		<script src="{{asset('customjs/two-lines-text.js')}}"></script>
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-		<!-- JavaScript -->
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-		<script src="{{asset('customjs/carousel.js')}}"></script>
+
 	</body>
-</html>
+
+	
+@endsection
+@push('after-styles')
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+@endpush
+
+@push('after-scripts')
+<script src="{{asset('customjs/two-lines-text.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="{{asset('customjs/carousel.js')}}"></script>
+	
+@endpush
