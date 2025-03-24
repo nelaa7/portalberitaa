@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				@empty
-				<p>belum ada data terbaru...</p>
+				<p>No recent data yet</p>
 					
 				@endforelse
 				
@@ -61,7 +61,7 @@
 				<a href="{{route('front.details', $article->slug)}}" class="card-news">
 					<div class="rounded-[20px] ring-1 ring-[#EEF0F7] p-[26px_20px] flex flex-col gap-4 hover:ring-2 hover:ring-[#143D60] transition-all duration-300 bg-white">
 						<div class="thumbnail-container w-full h-[200px] rounded-[20px] flex shrink-0 overflow-hidden relative">
-							<p class="badge-white absolute top-5 left-5 rounded-full p-[8px_18px] bg-white font-bold text-xs leading-[18px]">{{$article->category->name}}</p>
+							<p class="badge-white absolute top-5 left-5 rounded-full p-[8px_18px] bg-[#143D60] font-bold text-[#FFFFFF] text-xs leading-[18px] uppercase">{{$article->category->name}}</p>
 							<img src="{{Storage::url($article->thumbnail)}}" class="object-cover w-full h-full" alt="thumbnail" />
 						</div>
 						<div class="card-info flex flex-col gap-[6px]">
@@ -71,7 +71,7 @@
 					</div>
 				</a>
 			@empty
-				<p>belum ada data terbaru ...</p>
+				<p>No recent data yet</p>
 			@endforelse
 				
 			</div>
@@ -99,7 +99,7 @@
 					</div>
 				</a>
 				@empty
-				<p> belum ada data ... </p>
+				<p>No recent data yet</p>
 				@endforelse
 				
 			</div>
@@ -152,7 +152,7 @@
 						</a>
 						
 						@empty
-						<p>Belum ada data terbaru</p>
+						<p>No recent data yet</p>
 								
 						@endforelse
 						
@@ -199,7 +199,7 @@
 							</div>
 						</a>
 						@empty
-							<p>Belum ada data terbaru...</p>
+							<p>No recent data yet</p>
 						@endforelse
 						
 					<div class="sticky z-10 bottom-0 w-full h-[100px] bg-gradient-to-b from-[rgba(255,255,255,0.19)] to-[rgba(255,255,255,1)]"></div>
@@ -217,7 +217,7 @@
 			<div class="flex justify-between items-center h-fit">
 				<div class="featured-news-card relative w-full h-[424px] flex flex-1 rounded-[20px] overflow-hidden">
 					<img src="{{Storage::url($politics_featured_articles->thumbnail)}}" class="thumbnail absolute w-full h-full object-cover" alt="icon" />
-					<div class="w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.9)] absolute z-10"></div>
+					<div class="w-full h-full bg-gradient-to-b from-[rgba(0, 0, 0, 0)] to-[rgba(45, 51, 107, 0.9)] absolute z-10"></div>
 					<div class="card-detail w-full flex items-end p-[30px] relative z-20">
 						<div class="flex flex-col gap-[10px]">
 							<p class="text-white">Featured</p>
@@ -243,19 +243,15 @@
 							</div>
 						</a>
 						@empty
-							<p>Belum ada data terbaru</p>
+							<p>No recent data yet</p>
 						@endforelse
 						
 					</div>
-					<div class="sticky z-10 bottom-0 w-full h-[100px] bg-gradient-to-b from-[rgba(255,255,255,0.19)] to-[rgba(255,255,255,1)]"></div>
+					<div class="sticky z-10 bottom-0 w-full h-[100px] bg-gradient-to-b from-[rgba(45, 51, 107,0.19)] to-[rgba(255,255,255,1)]"></div>
 				</div>
 			</div>
 		</section>
-
-
 	</body>
-
-	
 @endsection
 @push('after-styles')
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
@@ -268,5 +264,7 @@
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{asset('customjs/carousel.js')}}"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
 	
 @endpush

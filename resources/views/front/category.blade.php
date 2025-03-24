@@ -31,8 +31,8 @@
 					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#143D60] rounded-[20px] overflow-hidden bg-white">
 					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
 						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold uppercase">{{$news->category->name}}</p>
+							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-[#143D60] rounded-[50px]">
+							<p class="text-xs leading-[18px] font-bold text-[#FFFFFF] uppercase">{{$news->category->name}}</p>
 						</div>
 						<img src="{{Storage::url($news->thumbnail)}}" alt="thumbnail photo"
 							class="w-full h-full object-cover" />
@@ -44,7 +44,7 @@
 				</div>
 			</a>
             @empty
-                <p>Belum ada berita terkini...</p>
+                <p>No recent data yet</p>
             @endforelse
 		</div>
 	</section>

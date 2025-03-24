@@ -83,7 +83,7 @@
                 
 				<a href="{{route('front.details', $item_news->slug)}}" class="card-from-author">
 					<div
-						class="rounded-[20px] ring-1 ring-[#EEF0F7] p-[14px] flex gap-4 hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300">
+						class="rounded-[20px] ring-1 ring-[#EEF0F7] p-[14px] flex gap-4 hover:ring-2 hover:ring-[#143D60] transition-all duration-300">
 						<div class="w-[70px] h-[70px] flex shrink-0 overflow-hidden rounded-2xl">
 							<img src="{{Storage::url($item_news->thumbnail)}}" class="object-cover w-full h-full"
 								alt="thumbnail">
@@ -95,7 +95,7 @@
 					</div>
 				</a>
                 @empty
-                    <p>Belum ada artikel lainnya</p>
+                    <p>No recent data yet</p>
                 @endforelse
 				
 			</div>
@@ -123,7 +123,7 @@
 			</p>
 		</div>
 	</section>
-	<section id="Up-to-date" class="w-full flex justify-center mt-[70px] py-[50px] bg-[#F9F9FC]">
+	<section id="Up-to-date" class="w-full flex justify-center mt-[70px] py-[50px] bg-[#F4F6FF]">
 		<div class="max-w-[1130px] mx-auto flex flex-col gap-[30px]">
 			<div class="flex justify-between items-center">
 				<h2 class="font-bold text-[26px] leading-[39px]">
@@ -155,7 +155,7 @@
                 </a>
 
                 @empty
-                <p>Belum ada article lainnya</p>
+                <p>No recent data yet</p>
                     
                 @endforelse
 				
@@ -163,7 +163,22 @@
 		</div>
 	</section>
 
+	<section id="Comments" class="max-w-[1130px] mx-auto mt-[70px]">
+		<h2 class="font-bold text-[26px] leading-[39px] mb-6">Comments</h2>
+		<div id="disqus_thread" class="bg-white p-4 rounded-2xl shadow-md"></div>
+	</section>
+	
+	
+
+
+	<noscript>
+		Please enable JavaScript to view the 
+		<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+	</noscript>
+	
+
 </body>
+
 
 
     
@@ -183,5 +198,17 @@
 <script src="js/two-lines-text.js"></script>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+		
+	
+	(function() { // JANGAN UBAH BAGIAN DI BAWAH INI
+		var d = document, s = d.createElement('script');
+		s.src = 'https://updatein-1.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+
 
 @endpush

@@ -54,7 +54,7 @@
 				</div,>
 			</a>
             @empty
-            <p>Belum ada artikel yang ditulis</p>
+            <p>No recent data yet/p>
                 
             @endforelse
 			
