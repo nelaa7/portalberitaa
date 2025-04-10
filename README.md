@@ -1,4 +1,4 @@
-<p align="center"><a href="#" target="_blank"><img src="public\assets\images\logos\logo-11.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://nelaanjani.vercel.app/" target="_blank"><img src="public\assets\images\logos\logo-11.png" width="400"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -9,49 +9,34 @@
 
 ## About Warta Suara
 
-Warta Suara is a digital news portal that serves as a trusted source of information for the people of Indonesia. By presenting a variety of news categories ranging from politics, economy, sports, to entertainment, this portal is committed to providing actual, factual, and balanced content to its readers. Warta Suara journalists work hard every day to bring in-depth coverage and sharp analysis of important events, so that the public can gain a comprehensive understanding of current issues. The presence of Warta Suara is a bridge of information that connects events from various regions and abroad to readers, which can be relied upon in the midst of a dynamic information era.
+Warta Suara is a digital news portal that serves as a trusted source of information for the people of Indonesia. By presenting a variety of news categories ranging from politics, business, sports, to entertainment, this portal is committed to providing actual, factual, and balanced content to its readers. Warta Suara journalists work hard every day to bring in-depth coverage and sharp analysis of important events, so that the public can gain a comprehensive understanding of current issues. The presence of Warta Suara is a bridge of information that connects events from various regions and abroad to readers, which can be relied upon in the midst of a dynamic information era.
 
 
-## Learning Laravel
+## Menu & Features
+- Home
+- Detail article
+- Author
+- Category
+- About Us
+- Upgrade
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Screenshot Warta Suara
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Website
 
-## Laravel Sponsors
+- home
+<img src="doc_portalberita\WEB\web-home.png" width="400">
+- article
+<img src="doc_portalberita\WEB\web-article.png" width="400">
+- category
+<img src="doc_portalberita\WEB\web-category.png" width="400">
+- about
+<img src="doc_portalberita\WEB\web-about.png" width="400">
+- author
+<img src="doc_portalberita\WEB\web-author.png" width="400">
+- upgrade
+<img src="doc_portalberita\WEB\web-upgrade.png" width="400">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Mobile
