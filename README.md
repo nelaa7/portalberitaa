@@ -32,5 +32,14 @@ Warta Suara is a digital news portal that serves as a trusted source of informat
 - author <img src="doc_portalberita\WEB\web-author.png" width="400">
 - upgrade <img src="doc_portalberita\WEB\web-upgrade.png" width="400">
 
+| Halaman    | Pratinjau |
+|------------|-----------|
+| **Home**      | ![Home](doc_portalberita/WEB/web-home.png) |
+| **Article**   | ![Article](doc_portalberita/WEB/web-article.png) |
+| **Category**  | ![Category](doc_portalberita/WEB/web-category.png) |
+| **About**     | ![About](doc_portalberita/WEB/web-about.png) |
+| **Author**    | ![Author](doc_portalberita/WEB/web-author.png) |
+| **Upgrade**   | ![Upgrade](doc_portalberita/WEB/web-upgrade.png) |
+
 
 ### Mobile
