@@ -25,14 +25,14 @@ Warta Suara is a digital news portal that serves as a trusted source of informat
 
 ## Screenshot Warta Suara
 
-### Website
+<!-- ### Website
 
-<!-- - home <img src="doc_portalberita\WEB\web-home.png" width="400">
+- home <img src="doc_portalberita\WEB\web-home.png" width="400">
 - article <img src="doc_portalberita\WEB\web-article.png" width="400">
 - category <img src="doc_portalberita\WEB\web-category.png" width="400">
 - about <img src="doc_portalberita\WEB\web-about.png" width="400">
 - author <img src="doc_portalberita\WEB\web-author.png" width="400">
-- upgrade <img src="doc_portalberita\WEB\web-upgrade.png" width="400"> -->
+- upgrade <img src="doc_portalberita\WEB\web-upgrade.png" width="400">
 
 | Halaman    | Pratinjau |
 |------------|-----------|
@@ -44,4 +44,4 @@ Warta Suara is a digital news portal that serves as a trusted source of informat
 | **Upgrade**   | <img src="doc_portalberita/WEB/web-upgrade.png" width="300"> |
 
 
-### Mobile
+### Mobile -->
