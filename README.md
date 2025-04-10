@@ -7,19 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Warta Suara
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Warta Suara is a digital news portal that serves as a trusted source of information for the people of Indonesia. By presenting a variety of news categories ranging from politics, economy, sports, to entertainment, this portal is committed to providing actual, factual, and balanced content to its readers. Warta Suara journalists work hard every day to bring in-depth coverage and sharp analysis of important events, so that the public can gain a comprehensive understanding of current issues. The presence of Warta Suara is a bridge of information that connects events from various regions and abroad to readers, which can be relied upon in the midst of a dynamic information era.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
