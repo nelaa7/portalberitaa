@@ -10,6 +10,8 @@ Route::get('/author/{author:slug}', [FrontController::class,'author'])->name('fr
 Route::get('/search', [FrontController::class,'search'])->name('front.search');
 Route::get('/about', [FrontController::class,'about'])->name('front.about');
 Route::get('/navbar', [FrontController::class,'navbar'])->name('components.navbar');
+Route::get('/upgrade', [FrontController::class,'upgrade'])->name('front.upgrade');
+
 
 
 

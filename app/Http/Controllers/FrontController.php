@@ -177,8 +177,10 @@ class FrontController extends Controller
 
     public function about(){
         $categories = Category::all();
+        $authors = Author::all();
 
-        return view('front.about', compact('categories'));
+
+        return view('front.about', compact('categories', 'authors'));
     }
 
     // public function navbar(){
@@ -186,6 +188,11 @@ class FrontController extends Controller
 
     //     return view('components.navbar', compact('categories'));
     // }
+    public function upgrade(){
+        $categories = Category::all();
+
+        return view('front.upgrade', compact('categories'));
+    }
     public function boot()
 {
     View::composer('components.navbar', function ($view) {

@@ -1,5 +1,5 @@
 <!-- Footer Mulai -->
-<footer  class="w-full text-white mt-[70px] py-10 bg-gradient-to-r from-[#143D60] to-[#2B6FA9]">
+<footer  class="w-full text-white mt-[70px] py-10 bg-gradient-to-r from-[#112d45] to-[#2B6FA9]">
     <div class="max-w-[1130px] mx-auto flex flex-col md:flex-row justify-between gap-6 px-4">
         <div class="flex flex-col gap-4">
             {{-- <h4 class="text-xl font-bold">UpdateIn</h4> --}}
