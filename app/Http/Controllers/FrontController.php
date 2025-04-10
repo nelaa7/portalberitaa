@@ -7,6 +7,8 @@ use App\Models\Author;
 use App\Models\BannerAdvertisement;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
+
 
 class FrontController extends Controller
 {
@@ -172,4 +174,22 @@ class FrontController extends Controller
 
         return view('front.details', compact('author_news','square_ads_1','square_ads_2','bannerads','articleNews', 'categories', 'articles'));
     }
+
+    public function about(){
+        $categories = Category::all();
+
+        return view('front.about', compact('categories'));
+    }
+
+    // public function navbar(){
+    //     $categories = Category::all();
+
+    //     return view('components.navbar', compact('categories'));
+    // }
+    public function boot()
+{
+    View::composer('components.navbar', function ($view) {
+        $view->with('categories', Category::all());
+    });
+}
 }

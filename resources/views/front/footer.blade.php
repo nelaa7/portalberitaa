@@ -1,16 +1,23 @@
 <!-- Footer Mulai -->
-<footer class="w-full bg-[#143D60] text-white mt-[70px] py-10">
+<footer  class="w-full text-white mt-[70px] py-10 bg-gradient-to-r from-[#143D60] to-[#2B6FA9]">
     <div class="max-w-[1130px] mx-auto flex flex-col md:flex-row justify-between gap-6 px-4">
         <div class="flex flex-col gap-4">
-            <h4 class="text-xl font-bold">UpdateIn</h4>
-            <p class="text-sm max-w-[300px]">Platform berita terpercaya dengan informasi terkini dari berbagai kategori untuk memenuhi kebutuhan pembaca modern.</p>
+            {{-- <h4 class="text-xl font-bold">UpdateIn</h4> --}}
+            <img src="{{asset('assets/images/logos/logo-9.png')}}" alt="logo" />
+            <p class="text-sm max-w-[250px]">Platform berita terpercaya dengan informasi terkini dari berbagai kategori untuk memenuhi kebutuhan pembaca modern.</p>
         </div>
-        <div class="flex flex-col gap-2">
+        {{-- <div class="flex flex-col gap-2">
             <h5 class="font-semibold">Informasi</h5>
             <a href="#" class="text-sm hover:underline">About us</a>
             <a href="#" class="text-sm hover:underline">Privacy</a>
-        </div>
+        </div> --}}
+       
         <div class="flex flex-col gap-2">
+           <div class="flex flex-col gap-2">
+            <h5 class="font-semibold">Informasi</h5>
+            <a href="{{route('front.about')}}" class="text-sm hover:underline">About us</a>
+            <a href="#" class="text-sm hover:underline">Privacy</a>
+        </div>
             <h5 class="font-semibold">Follow us</h5>
             <div class="flex gap-4">
                 <a href="#" alt="facebook" class="w-5 h-5">
@@ -29,8 +36,13 @@
                       <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1 .4.4.8.9 1 1.5.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5-.4.4-.9.8-1.5 1-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1-.4-.4-.8-.9-1-1.5-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5.4-.4.9-.8 1.5-1 .5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.6.2 4.5.5 3.7.9 2.9 1.3 2.2 1.8 1.5 2.5.8 3.2.3 3.9 0 4.7c-.4.8-.7 1.9-.8 3.3C-.1 8.3 0 8.7 0 12s-.1 3.7.1 4.9c.1 1.4.4 2.5.8 3.3.3.8.8 1.5 1.5 2.2.7.7 1.4 1.2 2.2 1.5.8.4 1.9.7 3.3.8 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.4-.1 2.5-.4 3.3-.8.8-.3 1.5-.8 2.2-1.5.7-.7 1.2-1.4 1.5-2.2.4-.8.7-1.9.8-3.3.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.4-.4-2.5-.8-3.3-.3-.8-.8-1.5-1.5-2.2-.7-.7-1.4-1.2-2.2-1.5-.8-.4-1.9-.7-3.3-.8C15.7-.1 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.3a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.2zm6.4-11.7a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/>
                     </svg>
                   </a>
-                  
             </div>
         </div>
     </div>
+    <div class="w-full border-t border-gray-400 text-center pt-3 pb-3 text-white text-sm">
+        © 2025 Warta Suara. All rights reserved.
+    </div>    
 </footer>
+{{-- <div class="w-full bg-[#112e42] text-center py-3 text-white text-sm">
+    © 2025 Warta Suara. All rights reserved.
+</div> --}}
