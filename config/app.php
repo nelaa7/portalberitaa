@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Infotaiment'),
+    'name' => env('APP_NAME', 'Warta Suara'),
 
     /*
     |--------------------------------------------------------------------------
